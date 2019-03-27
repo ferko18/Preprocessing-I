@@ -133,10 +133,150 @@ table {
 * {
   box-sizing: border-box;
 }
-
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
-  
 }
 
+/***header Firealem******/
+@headerbackground: rgb(224, 218, 218);
+header {
+  
+  margin: 10px 0;
+  padding: 10px 2%;
+  display: flex;
+  justify-content: flex-end;
+  nav {
+    
+    a {
+      text-decoration: none;
+      font-size: 2.8rem;
+      margin-left: 40px;
+      color: black;
+    }
+  }
+  
+
+  
+    
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  @media(max-width:500px){
+    a{
+      margin-left:20px;
+      font-size: 2rem;
+    }
+  }
+}
+
+.intro {
+  //Variable**********************************************************************
+  background-color: @headerbackground;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 320px;
+  padding-top: 20px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  
+  .intro-text{
+    
+    width:40%;
+    
+  }
+
+  p {
+    font-size: 3.5rem;
+    padding: 10px 1%;
+  }
+  img {
+    
+    padding: 10px;
+  }
+  h1 {
+    font-size: 3rem;
+
+    color: blue;
+  }
+  ul {
+    font-size: 2rem;
+  }
+  .skills {
+    
+    display: flex;
+    
+    margin-top: 20px;
+  }
+
+  @media(max-width:500px){
+    img{
+      display:none;
+    }
+  }
+}
+.middleheader{
+  padding:10px 5%;
+ p{
+   text-align: center;
+   font-size: 3rem;
+ }
+}
+//mixins****************************************************************************************
+.mixer1(){
+  
+  h2 {
+    font-size: 2rem;
+    padding: 0px 2%;
+    font-style: italic;
+    font-weight: bold;
+  }
+  }
+  .mixer2(){
+  p{
+    font-size: 1.5rem;
+    padding: 0px 2%;
+  }
+}
+.experience {
+  background-color: white;
+  //height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+
+  .column1 {
+    background-color: rgb(197, 194, 194);
+    width: 33.3%;
+    .mixer1;
+    .mixer2;
+  }
+  .column2 {
+    background-color: rgb(138, 151, 138);
+    width: 33.3%;
+    .mixer1;
+    .mixer2
+  }
+  .column3 {
+    background-color: rgb(197, 194, 194);
+
+    width: 33.3%;
+    .mixer1;
+    .mixer2;
+  }
+}
+
+.foot{
+  padding: 10px 2%;
+  
+  background-color: bisque;
+  p{
+    font-size: 1.5rem;
+  }
+}
