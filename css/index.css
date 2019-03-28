@@ -1,1 +1,260 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+/***header Firealem******/
+header {
+  margin: 10px 0;
+  padding: 10px 2%;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 2.8rem;
+  margin-left: 40px;
+  color: black;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container a {
+    margin-left: 20px;
+    font-size: 2rem;
+  }
+}
+.intro {
+  background-color: #e0dada;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 320px;
+  padding-top: 20px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+.intro .intro-text {
+  width: 40%;
+}
+.intro p {
+  font-size: 3.5rem;
+  padding: 10px 1%;
+}
+.intro img {
+  padding: 10px;
+}
+.intro h1 {
+  font-size: 3rem;
+  color: blue;
+}
+.intro ul {
+  font-size: 2rem;
+}
+.intro .skills {
+  display: flex;
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .intro img {
+    display: none;
+  }
+}
+.middleheader {
+  padding: 10px 5%;
+}
+.middleheader p {
+  text-align: center;
+  font-size: 3rem;
+}
+.experience {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+}
+.experience .column1 {
+  background-color: #c5c2c2;
+  width: 33.3%;
+}
+.experience .column1 h2 {
+  font-size: 2rem;
+  padding: 0px 2%;
+  font-style: italic;
+  font-weight: bold;
+}
+.experience .column1 p {
+  font-size: 1.5rem;
+  padding: 0px 2%;
+}
+.experience .column2 {
+  background-color: #8a978a;
+  width: 33.3%;
+}
+.experience .column2 h2 {
+  font-size: 2rem;
+  padding: 0px 2%;
+  font-style: italic;
+  font-weight: bold;
+}
+.experience .column2 p {
+  font-size: 1.5rem;
+  padding: 0px 2%;
+}
+.experience .column3 {
+  background-color: #c5c2c2;
+  width: 33.3%;
+}
+.experience .column3 h2 {
+  font-size: 2rem;
+  padding: 0px 2%;
+  font-style: italic;
+  font-weight: bold;
+}
+.experience .column3 p {
+  font-size: 1.5rem;
+  padding: 0px 2%;
+}
+.foot {
+  padding: 10px 2%;
+  background-color: bisque;
+}
+.foot p {
+  font-size: 1.5rem;
+}
